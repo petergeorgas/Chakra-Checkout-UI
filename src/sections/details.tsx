@@ -32,7 +32,7 @@ const Details = () => {
 					<Button variant="link">click here</Button> to log in.
 				</Text>
 			</VStack>
-			<SimpleGrid w="full" columns={2} columnGap={3} rowGap={6} >
+			<SimpleGrid w="full" columns={2} columnGap={3} rowGap={6}>
 				<GridItem colSpan={colSpan}>
 					<FormControl>
 						<FormLabel>First Name</FormLabel>
@@ -61,7 +61,7 @@ const Details = () => {
 					<FormControl>
 						<FormLabel>Address</FormLabel>
 						<Input
-							placeholder="350 Bush St."
+							placeholder="1 Main St."
 							value={address}
 							onChange={(e) => {
 								setAddress(e.target.value);
@@ -101,7 +101,9 @@ const Details = () => {
 					</FormControl>
 				</GridItem>
 				<GridItem colSpan={2}>
-					<Checkbox defaultChecked colorScheme="purple">Ship to billing address.</Checkbox>
+					<Checkbox defaultChecked colorScheme="purple">
+						Ship to billing address.
+					</Checkbox>
 				</GridItem>
 				<GridItem colSpan={2}>
 					<Button w="full" size="lg" colorScheme="purple">

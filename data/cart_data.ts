@@ -14,7 +14,7 @@ export const product_data = [
 			"https://cdn.shopify.com/s/files/1/0062/4915/2581/products/pnycomp27473_1-Blue_1024x1024.jpg?v=1556646870",
 	},
 	{
-		name: "Skate board",
+		name: "Skateboard",
 		p_number: "SKTCOMP27541",
 		price: 118.95,
 		p_img:

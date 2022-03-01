@@ -57,7 +57,7 @@ const Cart = (props: { items: ProductData[] }) => {
 			</VStack>
 			{items.map((item) => {
 				return (
-					<HStack w="full" spacing={6}>
+					<HStack w="full" spacing={6} alignContent="space-between">
 						<Image w="96px" h="96px" src={item.p_img} />
 						<VStack alignItems="flex-start">
 							<Text fontWeight="bold" fontSize="x-large">
