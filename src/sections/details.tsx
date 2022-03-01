@@ -6,6 +6,7 @@ import {
 	GridItem,
 	FormControl,
 	FormLabel,
+	Stack,
 	Input,
 	Select,
 	Checkbox,
@@ -20,6 +21,7 @@ const Details = () => {
 	const [address, setAddress] = useState("");
 	const [city, setCity] = useState("");
 	const [state, setState] = useState("ca");
+	const [ship, setShip] = useState(1);
 
 	const colSpan = useBreakpointValue({ base: 2, md: 1 });
 
@@ -101,7 +103,19 @@ const Details = () => {
 					</FormControl>
 				</GridItem>
 				<GridItem colSpan={2}>
-					<Checkbox defaultChecked colorScheme="purple">
+					<Checkbox
+						defaultChecked
+						colorScheme="purple"
+						value={ship}
+						onChange={(e) => {
+							if (e.target.checked) {
+								setShip(1);
+							} else {
+								setShip(0);
+							}
+							console.log(`checked: ${ship}`);
+						}}
+					>
 						Ship to billing address.
 					</Checkbox>
 				</GridItem>
