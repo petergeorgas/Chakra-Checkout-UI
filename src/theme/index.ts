@@ -19,6 +19,18 @@ const theme = extendTheme({
 		heading: `Montserrat, ${base.fonts.heading}`,
 		body: `Inter ${base.fonts.body}`,
 	},
+	components: {
+		Checkbox: {
+			baseStyle: {
+				control: {
+					_focus: {
+						ring: 2,
+						ringColor: "purple.500",
+					},
+				},
+			},
+		},
+	},
 });
 
 export default theme;

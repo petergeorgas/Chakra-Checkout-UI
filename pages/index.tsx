@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { Container, Flex } from "@chakra-ui/react";
 import Details from "../src/sections/details";
 import Cart from "../src/sections/cart";
+import { product_data } from "../data/cart_data";
 
 const Home: NextPage = () => {
 	return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
 				direction={{ base: "column-reverse", md: "row" }}
 			>
 				<Details />
-				<Cart />
+				<Cart items={product_data}/>
 			</Flex>
 		</Container>
 	);
